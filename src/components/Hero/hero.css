@@ -1,0 +1,133 @@
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 6rem;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+  }
+  
+  .hero__center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .hero-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-content span {
+    color: #C778DD;
+  }
+  
+  .description {
+    color: #ABB2BF;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-btn {
+    border: 1px solid #C778DD;
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: "Fira Code", monospace;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #C778DD;
+    color: #000;
+  }
+  
+  .hero-image {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .hero__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .hero__back {
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+  }
+  
+  .status {
+    background-color: #2e2e38;
+    padding: 0.5rem 1rem;
+    border-left: 5px solid #a971f8;
+    font-size: 0.9rem;
+    font-family: "Fira Code", monospace;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #a971f8;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .hero__bottom {
+    margin-top: 2rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero__center {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: -30px;
+    }
+    .contact-btn {
+        display: none;
+    }
+    .hero-content h2 {
+        font-size: 25px;
+    }
+  
+    .hero-image {
+      order: 1;
+      max-width: 300px;
+      margin-bottom: 2rem;
+    }
+  
+    .hero__back {
+      top: -5px;
+      left: -20px;
+    }
+  }
+  

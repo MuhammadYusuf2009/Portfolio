@@ -1,0 +1,219 @@
+.About {
+    padding: 15px;
+}
+
+.about__me {
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.about__me h3 {
+    font-size: 32px;
+    color: white;
+}
+
+.about__me h3 span {
+    color: #C778DD;
+}
+
+.about__me h5 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ABB2BF;
+}
+
+.about__text {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    color: #ABB2BF;
+    line-height: 30px;
+    flex-wrap: wrap;
+}
+
+.about__text p {
+    max-width: 500px;
+    flex: 1;
+}
+
+.about__text img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.skills {
+    margin-top: 70px;
+}
+
+.skills h3 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: white;
+}
+
+.skills h3 span {
+    color: #C778DD;
+}
+
+.skills_bor {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.skill__border {
+    background: transparent;
+    border: 2px solid #ABB2BF;
+    border-radius: 16px;
+    padding: 20px 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: #2c2f33;
+    cursor: pointer;
+}
+
+.skill__border:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(171, 178, 191, 0.3);
+}
+
+.skill__border h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #C778DD;
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+}
+
+.skill__border h5 {
+    font-size: 17px;
+    line-height: 1.6;
+    color: white;
+}
+
+.my__fun {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.my__fun h3 {
+    font-size: 32px;
+    color: white;
+}
+
+.my__fun h3 span {
+    color: #C778DD;
+}
+
+.myfun__borders {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    color: #ABB2BF;
+}
+
+.myfun__borders strong {
+    color: white;
+}
+
+.summer__border {
+    border: 1px solid #ABB2BF;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.friends__border {
+    border: 1px solid #ABB2BF;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.mytop__border {
+    display: flex;
+    gap: 20px;
+}
+
+.mybottom__border img {
+    position: absolute;
+    margin-top: -80px;
+}
+
+.pizza__border {
+    border: 1px solid #ABB2BF;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.turkey__border {
+    border: 1px solid #ABB2BF;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.green__border {
+    border: 1px solid #ABB2BF;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.school__border {
+    border: 1px solid #ABB2BF;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.siblings__border {
+    border: 1px solid #ABB2BF;
+    color: #ABB2BF;
+    padding: 8px 8px;
+    margin-top: 10px;
+    width: 260px;
+    cursor: pointer;
+}
+
+@media (max-width: 950px) {
+    .about__text {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about__me h3 {
+        font-size: 28px;
+    }
+
+    .about__me h5 {
+        font-size: 14px;
+    }
+
+    .about__text p {
+        line-height: 26px;
+        font-size: 15px;
+    }
+
+    .skills_bor {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .myfun__borders {
+        flex-direction: column;
+        }
+
+        .mybottom__border img {
+        display: none;
+    }
+
+    .mytop__border {
+        flex-direction: column;
+    }
+
+    .siblings__border {
+        width: 100%;
+    }
+
+
+}

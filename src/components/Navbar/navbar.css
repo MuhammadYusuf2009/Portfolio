@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+.Navbar {
+    padding: 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.logo h4 {
+    font-size: 16px;
+    color: white;
+    margin-top: -5px;
+}
+
+.ul__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.ul__li span {
+    color: #C778DD;
+}
+
+.ul__li {
+    font-size: 16px;
+    color: gray;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ul__li.active {
+    color: white;
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .ul__list {
+        display: none;
+        flex-direction: column;
+        background: #1f1f1f;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 8px;
+        z-index: 100;
+    }
+
+
+    .ul__list.show {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}

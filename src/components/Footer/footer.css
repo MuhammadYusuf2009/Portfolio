@@ -1,0 +1,72 @@
+.logo__dad {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__logo h5 {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.footer__logo h4 {
+    font-size: 16px;
+    color: #ABB2BF;
+}
+
+.footer {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.footer .line {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: -30px;
+}
+
+.media h2 {
+    font-size: 24px;
+    color: white;
+}
+
+.about__work {
+    margin-top: 20px;
+}
+
+.about__work h3 {
+    font-size: 16px;
+    color: white;
+}
+
+.footer__center {
+    text-align: center;
+    margin-top: 40px;
+    color: #ABB2BF;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer__logo {
+        justify-content: center;
+    }
+
+    .logo__dad {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
